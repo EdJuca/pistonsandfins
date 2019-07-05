@@ -5,134 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Week07_Day01</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400|Staatliches&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<body id="body_mobile">
+  
   <!-- HEADER -->
-  <section>
+
+
+    <!-- burger menu -->
+      
+    <nav class="nav_bar">
+        <a href="index.html"><img src="./assets/images/drawable-xxhdpi/pistonsandfins_white.png" ></a>
+        <div id="menuToggle">
+          
+          <!-- A hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.-->
+          <input type="checkbox" id="menu-checkbox" />
+            
+          <!-- Some spans to act as a hamburger.-->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!-- The menu has to be inside of the button
+          but hey, it's pure CSS magic. -->
+          <ul id="menu"> 
+            <a href="#"><li>HOME</li></a>
+            <a href="#"><li>EVENTO/ PROGRAMA</li></a>
+            <a href="#"><li>EVENTO/ INDICAÇÕES</li></a>
+            <a href="#"><li>SOBRE</li></a>
+            <a href="#"><li>SHOP</li></a>
+            <a href="#"><li>CONTACTO</li></a>
+            <a href="#"><li>LIVE</li></a>
+          </ul>
+        </div>
+      </div>
+      </nav>
+
+
     <!-- nav_bar -->
-    <nav style="background-color: black"> 
-    <a href="index.html"><img src="/assets/images/drawable-hdpi/pistonsandfins_white.png"></a>
-    <a href=""><img src="/assets/images/drawable-hdpi/menuburguer_white.png"></a>
-    </nav>
 
     <!-- banner -->
-    <nav  style="background-color: rgb(224, 224, 224)">
-      <img src="assets/images/drawable-hdpi/banner_01_header.png">
+    <nav>
+      <img class="home_banner" src="assets/images/drawable-xxhdpi/banner_01_header.png">
     </nav>
   </section>
   <br>
 
 <!-- PROGRAM -->
-  <section>
-  <h3>-O EVENTO-</h3>
-  <h1>PROGRAMA</h1>
-  <h5>Pelo quarto ano consecutivo o festival Pistons & Fins vai celabrar  Engine Custom Culture e a Board Culture em Portugal, dessa vez na belíssima Praia do Beliche, em Vila do Bispo. Serão 3 dias de muita mota, carros de coleçao, surf e skate, além de bons concertos e street food. Tudo o que precisamos para celebrarmos juntos nossas paixões, de forma divertida e harmoniosa. Nos vemos na estrada… ou nas ondas;)</h5>
+  <section class="evento_section">
+    <h3>- O EVENTO -</h3>
+    <h1>PROGRAMA</h1>
+    <h4>Pelo quarto ano consecutivo o festival Pistons & Fins vai celabrar  Engine Custom Culture e a Board Culture em Portugal, dessa vez na belíssima Praia do Beliche, em Vila do Bispo. Serão 3 dias de muita mota, carros de coleçao, surf e skate, além de bons concertos e street food. Tudo o que precisamos para celebrarmos juntos nossas paixões, de forma divertida e harmoniosa. Nos vemos na estrada… ou nas ondas;)</h4>
   </section>
-  <br>
+  
 
   <!-- PROGRAM_CARDS -->
-  <section  style="background-color:yellow">Program_cards
+  <section>
     <ul><!-- CARDS -->
     
-    <!-- CARD 00 -->
-    <li style="background-color:whitesmoke">
-      <div><!-- Photo -->
-        <img src="assets/images/drawable-hdpi/program_pic_day00.png">
-      </div>
-      <div>
-        <div><!-- Text Box 01 -->
-          <div>ALL DAYS</div>
-          <div>24,25 e 26 de JULHO</div>
-        <div><!-- Text Box 02 -->
-            <div>24/7 Texto 01 <br> text 02</div>
-            <div>25/7 Texto 01 <br> text 02</div>
-            <div>26/7 Texto 01 <br> text 02</div>
-        </div> 
-        <div><!-- Text Box 03 -->
-            <div>€00,00</div>
-            <div><Button>COMPRAR</Button></div>
-        </div>   
-        <div><!-- Text Box 04 -->
-          Na compra do bilhete será forncedio um código para inscrição nas provas
-        </div>
-      </div>
-    </li>
-    <br>
-    <!-- CARD 01 -->
-    <li style="background-color: whitesmoke">
-      <div><!-- Photo -->
-        <img src="assets/images/drawable-hdpi/program_pic_day01.png">
-      </div>
-      <div>
-        <div><!-- Text Box 01 -->
-          <div>ALL DAYS</div>
-          <div>24,25 e 26 de JULHO</div>
-        <div><!-- Text Box 02 -->
-            <div>24/7 Texto 01 <br> text 02</div>
-            <div>25/7 Texto 01 <br> text 02</div>
-            <div>26/7 Texto 01 <br> text 02</div>
-        </div> 
-        <div><!-- Text Box 03 -->
-            <div>€00,00</div>
-            <div><Button>COMPRAR</Button></div>
-        </div>   
-        <div><!-- Text Box 04 -->
-          Na compra do bilhete será forncedio um código para inscrição nas provas
-        </div>
-      </div>
-    </li>
-    <br>
-    <!-- CARD 02 -->
-    <li style="background-color: whitesmoke">
-      <div><!-- Photo -->
-        <img src="assets/images/drawable-hdpi/program_pic_day02.png">
-      </div>
-      <div>
-        <div><!-- Text Box 01 -->
-          <div>ALL DAYS</div>
-          <div>24,25 e 26 de JULHO</div>
-        <div><!-- Text Box 02 -->
-            <div>24/7 Texto 01 <br> text 02</div>
-            <div>25/7 Texto 01 <br> text 02</div>
-            <div>26/7 Texto 01 <br> text 02</div>
-        </div> 
-        <div><!-- Text Box 03 -->
-            <div>€00,00</div>
-            <div><Button>COMPRAR</Button></div>
-        </div>   
-        <div><!-- Text Box 04 -->
-          Na compra do bilhete será forncedio um código para inscrição nas provas
-        </div>
-      </div>
-    </li>
-    <br>
-    <!-- CARD 03 -->
-    <li style="background-color: whitesmoke">
-      <div><!-- Photo -->
-        <img src="assets/images/drawable-hdpi/program_pic_day03.png">
-      </div>
-      <div>
-        <div><!-- Text Box 01 -->
-          <div>ALL DAYS</div>
-          <div>24,25 e 26 de JULHO</div>
-        <div><!-- Text Box 02 -->
-            <div>24/7 Texto 01 <br> text 02</div>
-            <div>25/7 Texto 01 <br> text 02</div>
-            <div>26/7 Texto 01 <br> text 02</div>
-        </div> 
-        <div><!-- Text Box 03 -->
-            <div>€00,00</div>
-            <div><Button>COMPRAR</Button></div>
-        </div>   
-        <div><!-- Text Box 04 -->
-          Na compra do bilhete será forncedio um código para inscrição nas provas
-        </div>
-      </div>
-    </li>
+      <!-- CARD 00 -->
+      <li class="program_card">
+          
+          <!-- Photo -->
+          <div class="program_card_pic"></div>
 
-    </ul>
-    
-    <a href="">VEJA AQUI O PROGRAMA COMPLETO <img src="/assets/icons/arrow.png"> </a>
+          <!-- Row 01 -->
+          <div class="program_card_row01">
+            <h2>ALL DAYS</h2>
+            <div class="align_center"><h5>24,25 e 26 de JULHO</h5></div>
+          </div>
+
+          <div class="program_card_content">
+
+              <!-- Row 02 -->
+              <div class= "program_card_cell">
+                <h5>24/7 Drag Race, Skate Comp </h5><h6>CONCERTO: Xavier Rudd</h6>
+              </div> 
+              <div class= "program_card_cell">
+                <h5>25/7 Super Hooligan Race, Ride</h5><h6>CONCERTO: Zen</h6>
+              </div>
+              <div class= "program_card_cell">
+                <h5>24/7 Surf Comp, Surf Classes </h5><h6>CONCERTO: Xutos & Pontapés</h6>
+              </div> 
+
+              <!-- Row 03 -->
+              <div class="program_card_row03">
+                <div class="align_center"><span class="euro">€</span><span class="price01">26</span><span class="price02">,50</span></div>
+                <div class="width_50"><button class="program_card_btn">COMPRAR</button></div>
+              </div>
+                
+              <!-- Row 04 -->
+                <div>
+                  <h6>Na compra do bilhete receberá um código para inscrição nas provas. </h6>
+                </div>
+          </div>
+      </li>
+
+      </ul>
+      
+      <div class="text_btn_box" >
+          <a id="text_btn_white" href="">
+            VEJA AQUI O PROGRAMA COMPLETO
+            <img class="btn_arrow" src="/assets/images/drawable-xxhdpi/arrow_bold_red.png">
+          </a>
+      </div>
+
   </section>
   <br>
 
